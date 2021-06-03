@@ -6,7 +6,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 // console.log(__dirname)
 // console.log(path.join(__dirname,'../public'))
-
+// changes for git to make unstaged
 // Define paths for express config
 const publicDirectoryPath = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname, '../templates/views')
