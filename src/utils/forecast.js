@@ -23,7 +23,7 @@ const forecast = (lat,lon, callback)=>{
         } else if (body.error) {
             callback('Please give proper coordinates', undefined)
         } else {
-            callback(undefined, body.current.weather_descriptions[0]+'. The temperature is '+body.current.temperature+' but it feels like '+ body.current.feelslike+' farrenhite out'+ ' of '+body.location.region )    
+            callback(undefined, body.current.weather_descriptions[0]+'. The temperature is '+body.current.temperature+' but it feels like '+ body.current.feelslike+' degree celcius out,'+ ' at '+body.location.region+' and humidity is '+body.current.humidity )    
         }
     })  
 }
