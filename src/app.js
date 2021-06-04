@@ -2,6 +2,7 @@ const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
 const app = express()
+const port = process.env.PORT || 3300
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 // console.log(__dirname)
@@ -120,6 +121,9 @@ app.get('*',(req, res)=>{
         name: 'Diptak Sengupta'
     })
 })
-app.listen(3300, ()=>{
-    console.log('server is up on port 3300')
-})
+
+    app.listen(port, ()=>{
+        console.log('server is up on port '+port)
+    })
+
+
